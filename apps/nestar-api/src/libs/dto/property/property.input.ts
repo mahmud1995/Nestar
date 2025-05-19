@@ -64,6 +64,7 @@ export class PropertyInput {
 
 	memberId?: ObjectId;
 
+	@IsOptional()
 	@Field(() => Date, { nullable: true })
 	constructedAt?: Date;
 }
@@ -111,11 +112,11 @@ class PISearch {
 
 	@IsOptional()
 	@Field(() => [Int], { nullable: true })
-	roomsList?: Number[];
+	roomsList?: number[];
 
 	@IsOptional()
 	@Field(() => [Int], { nullable: true })
-	bedsList?: Number[];
+	bedsList?: number[];
 
 	@IsOptional()
 	@IsIn(availableOptions, { each: true })

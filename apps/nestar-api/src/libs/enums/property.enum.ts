@@ -28,6 +28,9 @@ export enum PropertyLocation {
 	CHONJU = 'CHONJU',
 	DAEJON = 'DAEJON',
 	JEJU = 'JEJU',
+	ULSAN = 'ULSAN',
+	SUWON = 'SUWON',
+	CHANGWON = 'CHANGWON',
 }
 registerEnumType(PropertyLocation, {
 	name: 'PropertyLocation',
