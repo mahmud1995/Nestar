@@ -12,6 +12,14 @@ import { SocketModule } from './socket/socket.module';
 
 @Module({
 	imports: [
+		// Add Redis Cache Configuration
+		// CacheModule.register({
+		// 	isGlobal: true,
+		// 	store: redisStore,
+		// 	host: 'localhost',
+		// 	port: 6379,
+		// 	ttl: 3600, // Default TTL: 1 hour
+		// }),
 		ConfigModule.forRoot(),
 		// GraphQL Backend Server Qurish
 		GraphQLModule.forRoot({
